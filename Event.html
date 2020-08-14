@@ -1,0 +1,20 @@
+ <!DOCTYPE html>
+ <html>
+  <head>
+    <title>Event</title>
+
+    <script>
+       function effect(){
+          var x=document.getElementById("Hdr");
+          x.style.backgroundColor="lightblue";
+      }
+      function uneffect(){
+          var x=document.getElementById("Hdr");
+          x.style.backgroundColor="white";
+      }
+  </script>
+</head>
+  <body>
+      <h1 id="Hdr" onmouseover="effect()" onmouseout="uneffect()"> fuction worked successfully!!!</h1>
+  </body>
+</html>

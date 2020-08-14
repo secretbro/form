@@ -1,0 +1,33 @@
+body{
+    background-image: radial-gradient(red,yellow)
+}
+#form1{
+    position: relative;
+    top:80px;
+    left:500px;
+    width:270px;
+    height: 400px;
+    padding: 40px;
+    border-style: dotted;
+    background-image:linear-gradient(grey,lightgray );
+    
+}
+.det{
+    margin:10px; 
+    width:250;
+    background-color:wheat;
+}
+#submit{
+    background-color: darkgray;
+    position:relative;
+    top:20px;
+    left:20px;
+    width:200px;
+    height:30px;
+    border-radius:10px;   
+}
+h4{
+    position: relative;
+    top:-50;
+    text-align: center;
+}

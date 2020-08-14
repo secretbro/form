@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" type="text/css" href="formstyle.css" />
+    <script>
+        function validation(){
+    var result=true;
+    var e=document.getElementsByClassName("det")[3].value;
+    var atindex=e.indexOf('@');
+    var dotindex=e.lastIndexOf('.');
+    if(atindex<1 || dotindex>2)
+    result=false;
+    return (result);
+    }
+    </script>
+    </head>
+    <body>
+        <div id="form1">
+            <form  onsubmit="return validation()">
+            <div id="table1">
+            <table>
+                <caption><h4>REGISTERATION FORM</h4> </caption>
+                <tr>
+                    <td>Enter Your First Name :<input type="text" required class="det"></td>
+                </tr>
+                <tr>
+                    <td>Enter Your Last Name :<input type="text" class="det"></td>
+                </tr>
+                <tr>
+                    <td>Enter Your Contact No. :<input type="number" required class="det"></td>
+                </tr>
+                <tr>
+                    <td>Enter Your Email : <input type="text" required class="det"></td>
+                </tr>
+                <BR><BR>
+                <tr>
+                    <td> <input type="submit" value="Register" id="submit" onclick="Event.html"></td>
+                </tr>
+
+                </table>
+            </div><!-- table ending-->
+        </form>
+        </div><!-- form ending -->
+    </body>
+</html>
